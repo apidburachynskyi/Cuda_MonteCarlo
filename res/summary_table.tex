@@ -1,0 +1,29 @@
+\documentclass{article}
+\usepackage{booktabs}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{caption}
+\usepackage[table]{xcolor}
+\usepackage{makecell}
+\captionsetup[table]{labelformat=empty}
+\begin{document}
+
+\begin{table}[htbp]
+\centering
+\caption{\textbf{Summary statistics across the parameter grid}}
+\vspace{0.4em}
+\begin{tabular}{lrrrrrrrrr}
+\hline
+ & \multicolumn{4}{c}{\textbf{Price (\%)}} & \multicolumn{4}{c}{\textbf{Time (ms)}} \\
+\textbf{Method} & \textbf{Mean} & \textbf{Std} & \textbf{Min} & \textbf{Max} & \textbf{Mean} & \textbf{Std} & \textbf{Min} & \textbf{Max} \\
+\hline
+\textbf{Euler 1/1000} & 15.20 & 5.01 & 9.24 & 26.80 & 5.09 & 0.19 & 4.66 & 5.67 \\
+\textbf{Euler 1/30} & 15.37 & 5.01 & 9.35 & 27.27 & 0.20 & 0.01 & 0.18 & 0.22 \\
+\textbf{Exact 1/1000} & 15.52 & 5.19 & 9.24 & 28.06 & 468.80 & 141.22 & 210.93 & 662.02 \\
+\textbf{Exact 1/30} & 15.16 & 5.01 & 9.23 & 26.88 & 11.21 & 4.81 & 3.92 & 17.71 \\
+\textbf{Almost Exact 1/1000} & 15.54 & 5.17 & 9.29 & 28.15 & 467.57 & 138.65 & 215.35 & 658.48 \\
+\textbf{Almost Exact 1/30} & 14.43 & 3.94 & 9.46 & 24.31 & 11.15 & 4.93 & 3.97 & 18.13 \\
+\hline
+\end{tabular}
+\end{table}
+
+\end{document}
